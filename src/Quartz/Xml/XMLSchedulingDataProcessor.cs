@@ -216,6 +216,10 @@ namespace Quartz.Xml
             loadedTriggers.Clear();
         }
 
+        /// <summary>
+        /// xml½âÎö
+        /// </summary>
+        /// <param name="xml"></param>
         protected virtual void ProcessInternal(string xml)
         {
             PrepForProcessing();

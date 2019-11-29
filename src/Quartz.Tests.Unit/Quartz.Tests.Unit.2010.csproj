@@ -113,10 +113,6 @@
     <Reference Include="System.Transactions" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\AssemblyInfo.cs">
-      <Link>AssemblyInfo.cs</Link>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="CalendarIntervalTriggerTest.cs" />
     <Compile Include="Core\ListenerManagerTest .cs" />
     <Compile Include="Core\MissSchedulingChangeSignalTest.cs" />
@@ -129,7 +125,9 @@
     <Compile Include="Impl\AdoJobStore\JobStoreCMTTest.cs" />
     <Compile Include="Impl\AdoJobStore\JobStoreSupportTest.cs" />
     <Compile Include="Impl\AdoJobStore\StubConnection.cs" />
-    <Compile Include="Impl\AdoJobStore\UpdateTriggerTest.cs" />
+    <Compile Include="Impl\AdoJobStore\UpdateTriggerTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Impl\Calendar\BaseCalendarTest.cs" />
     <Compile Include="Impl\StdSchedulerFactoryTest.cs" />
     <Compile Include="Impl\Triggers\AbstractTriggerTest.cs" />
@@ -152,7 +150,9 @@
     </Compile>
     <Compile Include="Impl\AdoJobStore\Common\DbMetadataTest.cs" />
     <Compile Include="Impl\AdoJobStore\Common\DbProviderTest.cs" />
-    <Compile Include="Impl\AdoJobStore\StdAdoDelegateTest.cs" />
+    <Compile Include="Impl\AdoJobStore\StdAdoDelegateTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Impl\Calendar\AnnualCalendarTest.cs" />
     <Compile Include="Impl\Calendar\MonthlyCalendarTest.cs" />
     <Compile Include="Impl\Calendar\WeeklyCalendarTest.cs" />

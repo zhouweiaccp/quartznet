@@ -1,9 +1,9 @@
 namespace Quartz.Spi
 {
     /// <summary>
-    /// Allows different strategies for scheduling threads. The <see cref="Initialize" />
+    /// Allows different strategies n. ²ßÂÔ£¬Õ½ÂÔ£¨strategy for scheduling threads. The <see cref="Initialize" />
     /// method is required to be called before the first call to
-    /// <see cref="Execute" />. The Thread containing the work to be performed is
+    /// <see cref="Execute" />. The Thread containing the work to be performedÖ´ÐÐ is
     /// passed to execute and the work is scheduled by the underlying implementation.
     ///</summary>
     /// <author>matt.accola</author> 

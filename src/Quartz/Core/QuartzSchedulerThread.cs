@@ -286,6 +286,7 @@ namespace Quartz.Core
                         DateTimeOffset now = SystemTime.UtcNow();
 
                         ClearSignaledSchedulingChange();
+                        #region triggers
                         try
                         {
                             triggers = qsRsrcs.JobStore.AcquireNextTriggers(
@@ -316,7 +317,7 @@ namespace Quartz.Core
 	                        HandleDbRetry();
 							continue;
                         }
-
+                        #endregion
                         if (triggers != null && triggers.Count > 0)
                         {
                             now = SystemTime.UtcNow();
