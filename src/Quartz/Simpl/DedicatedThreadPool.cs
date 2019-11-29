@@ -8,7 +8,7 @@ namespace Quartz.Simpl
     /// An implementation of the TaskSchedulingThreadPool which uses a custom task scheduler
     /// with a dedicated pool of threads reserved only for its own scheduling purposes
     /// </summary>
-    public class DedicatedThreadPool : TaskSchedulingThreadPool
+    public class DedicatedThreadPool : TaskSchedulingThreadPool//专用的；专注的；献身的
     {
         /// <summary>
         /// Returns a QueuedTaskScheduler

@@ -67,7 +67,7 @@ namespace Quartz.Util
 
         /// <summary>
         /// A sorted list of round-robin queue lists.  Tasks with the smallest priority value
-        /// are preferred.  Priority groups are round-robin'd through in order of priority.
+        /// are preferred.  Priority groups are round-robin'd循环；循环赛 through in order of priority.
         /// </summary>
         private readonly SortedList<int, QueueGroup> _queueGroups = new SortedList<int, QueueGroup>();
 
@@ -90,7 +90,7 @@ namespace Quartz.Util
         /// <summary>The scheduler onto which actual work is scheduled.</summary>
         private readonly TaskScheduler _targetScheduler;
 
-        /// <summary>The queue of tasks to process when using an underlying target scheduler.</summary>
+        /// <summary>The queue of tasks to process when using an underlying  潜在的；根本的；在下面的；优先的 target scheduler.</summary>
         private readonly Queue<Task> _nonthreadsafeTaskQueue;
 
         /// <summary>The number of Tasks that have been queued or that are running whiel using an underlying scheduler.</summary>
@@ -131,7 +131,7 @@ namespace Quartz.Util
                 throw new ArgumentOutOfRangeException("concurrencyLevel");
             }
 
-            // Initialize only those fields relevant to use an underlying scheduler.  We don't
+            // Initialize only those fields relevant相关的；切题的；中肯的；有重大关系的；有意义的，目的明确的 to use an underlying scheduler.  We don't
             // initialize the fields relevant to using our own custom threads.
             _targetScheduler = targetScheduler ?? throw new ArgumentNullException("underlyingScheduler");
             _nonthreadsafeTaskQueue = new Queue<Task>();

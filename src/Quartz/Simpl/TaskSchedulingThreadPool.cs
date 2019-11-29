@@ -25,7 +25,7 @@ namespace Quartz.Simpl
 
         private readonly object taskListLock = new object();
 
-        // The semaphore used to limit concurrency and integers representing maximim concurrent tasks
+        // The semaphore 信号标，旗语；臂板信号装置 used to limit concurrency and integers representing maximim concurrent tasks
         private SemaphoreSlim concurrencySemaphore;
 
         private int maxConcurrency;
@@ -186,7 +186,7 @@ namespace Quartz.Simpl
 
             var task = new Task<Task>(runnable);
 
-            // Unrap the task so that we can work with the underlying task
+            // Unrap the task so that we can work with the underlying 潜在的；根本的；在下面的；优先的task
             var unwrappedTask = task.Unwrap();
             lock (taskListLock)
             {
