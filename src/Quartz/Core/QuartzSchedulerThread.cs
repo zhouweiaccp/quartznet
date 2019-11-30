@@ -93,7 +93,7 @@ namespace Quartz.Core
         }
 
         /// <summary>
-        /// Gets a value indicating whether this <see cref="QuartzSchedulerThread"/> is paused.
+        /// Gets a value indicating ָʾ whether this <see cref="QuartzSchedulerThread"/> is paused.
         /// </summary>
         /// <value><c>true</c> if paused; otherwise, <c>false</c>.</value>
         internal virtual bool Paused => paused;
