@@ -10,6 +10,7 @@ namespace Quartz.Simpl
 {
     /// <summary>
     /// An IThreadPool implementation which schedules tasks using a TaskScheduler (provided by implementers)
+    /// 线程池
     /// </summary>
     public abstract class TaskSchedulingThreadPool : IThreadPool
     {
@@ -124,8 +125,9 @@ namespace Quartz.Simpl
                 Scheduler = GetDefaultScheduler();
             }
 
-            // Initialize the concurrency semaphore with the proper initial count
-            concurrencySemaphore = new SemaphoreSlim(MaxConcurency);
+            // Initialize the concurrency semaphore with the proper initial count 信号标，旗语；臂板信号装置
+           // v.打旗语，发信号
+                       concurrencySemaphore = new SemaphoreSlim(MaxConcurency);
             isInitialized = true;
 
             log.Debug($"TaskSchedulingThreadPool configured with max concurrency of {MaxConcurency} and TaskScheduler {Scheduler.GetType().Name}.");
