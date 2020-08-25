@@ -35,3 +35,9 @@ use this file except in compliance with the License. You may obtain a copy
 of the License [here](http://www.apache.org/licenses/LICENSE-2.0).
 
 For API documentation, please refer to [Quartz.NET site](http://quartznet.sourceforge.net/apidoc/3.0/html/).
+
+
+
+## 源码分析
+![quartznet\src\Quartz\Core\QuartzSchedulerThread.cs]  job调度
+![quartznet\src\Quartz\Simpl\TaskSchedulingThreadPool.cs] SemaphoreSlim 信号量 task 

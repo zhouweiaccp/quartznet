@@ -32,6 +32,10 @@ using Quartz.Spi;
 
 namespace Quartz.Core
 {
+   // performing 表演（perform的ing形式）；履行
+    //adj. 表演的；履行的
+    //网络释义:
+    //performing: 执行
     /// <summary>
     /// The thread responsible for performing the work of firing <see cref="ITrigger" />
     /// s that are registered with the <see cref="QuartzScheduler" />.
