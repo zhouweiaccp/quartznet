@@ -1,0 +1,1 @@
+QuartzNetCore-master    netcore 2.2
