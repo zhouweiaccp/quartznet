@@ -86,9 +86,16 @@ namespace Quartz.Examples.Example13
                 ["quartz.jobStore.dataSource"] = "default",
                 ["quartz.jobStore.tablePrefix"] = "QRTZ_",
                 ["quartz.jobStore.clustered"] = "true",
-                ["quartz.jobStore.driverDelegateType"] = "Quartz.Impl.AdoJobStore.SqlServerDelegate, Quartz",
-                ["quartz.dataSource.default.connectionString"] = TestConstants.SqlServerConnectionString,
-                ["quartz.dataSource.default.provider"] = TestConstants.DefaultSqlServerProvider,
+                //["quartz.jobStore.driverDelegateType"] = "Quartz.Impl.AdoJobStore.SqlServerDelegate, Quartz",
+                //["quartz.dataSource.default.connectionString"] = TestConstants.SqlServerConnectionString,
+                //["quartz.dataSource.default.provider"] = TestConstants.DefaultSqlServerProvider,
+
+
+                ["quartz.jobStore.driverDelegateType"] = "Quartz.Impl.AdoJobStore.MySQLDelegate, Quartz",
+                ["quartz.dataSource.default.connectionString"] = "Server=localhost;Database=captest;uid=root;pwd=root1;",
+                // ["quartz.dataSource.default.provider"] = "MySql.Data",
+                ["quartz.dataSource.default.provider"] = "MySql",
+              
                 ["quartz.serializer.type"] = "json"
             };
 
