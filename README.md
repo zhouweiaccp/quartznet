@@ -95,3 +95,8 @@ TriggerBuilder - 用于定义/构建触发器实例
 内置的历史记录定期清除功能，内置邮件发送队列，内部集成的Dapper 可以用来处理任务数据。
 内置了2个例子任务,可以参照他们完成其他复杂的任务。
 [](https://github.com/zhaopeiym/quartzui)  docker 前端不好用
+
+
+## debugger
+![调试1](./doc/img/100911175046.png)
+![调试1](./doc/img/220200911175132.png)
