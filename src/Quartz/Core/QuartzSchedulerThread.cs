@@ -63,6 +63,9 @@ namespace Quartz.Core
         private static readonly TimeSpan DefaultIdleWaitTime = TimeSpan.FromSeconds(30);
 
         private TimeSpan idleWaitTime = DefaultIdleWaitTime;
+        /// <summary>
+        /// Milliseconds
+        /// </summary>
         private int idleWaitVariableness = 7 * 1000;
         private CancellationTokenSource cancellationTokenSource;
         private Task task;
@@ -232,7 +235,7 @@ namespace Quartz.Core
                     // check if we're supposed to pause...
                     lock (sigLock)
                     {
-                        while (paused && !halted)
+                        while (paused && !halted)//halted 停止，停顿（halt的过去式，过去分词）
                         {
                             try
                             {

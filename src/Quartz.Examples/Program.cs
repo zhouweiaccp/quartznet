@@ -23,7 +23,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Threading.Tasks;
-
+using Quartz.Logging.LogProviders;
 using Quartz.Util;
 
 namespace Quartz.Examples
@@ -40,7 +40,8 @@ namespace Quartz.Examples
             {
                 var logRepository = log4net.LogManager.GetRepository(Assembly.GetEntryAssembly());
                 log4net.Config.XmlConfigurator.Configure(logRepository, new System.IO.FileInfo("log4net.config"));
-
+                Quartz.Logging.LogProvider.SetCurrentLogProvider(new Quartz.Logging.LogProviders.Log4NetLogProvider());
+                
                 Assembly asm = typeof(Program).GetTypeInfo().Assembly;
                 Type[] types = asm.GetTypes();
 

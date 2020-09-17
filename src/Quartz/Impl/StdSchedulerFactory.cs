@@ -211,6 +211,7 @@ namespace Quartz.Impl
 
             var props = Util.Configuration.GetSection(ConfigurationSectionName);
             string requestedFile = QuartzEnvironment.GetEnvironmentVariable(PropertiesFile);
+            Log.Debug(()=> $"Initialize()   GetEnvironmentVariable{PropertiesFile}");
             string propFileName = !string.IsNullOrWhiteSpace(requestedFile) ? requestedFile : "~/quartz.config";
 
             // check for specials
@@ -271,9 +272,10 @@ Please add configuration to your application config file to correctly initialize
         {
             NameValueCollection retValue = new NameValueCollection(props);
             IDictionary<string, string> vars = QuartzEnvironment.GetEnvironmentVariables();
-
+            
             foreach (string key in vars.Keys)
             {
+             //   log.Debug(() => $"OverrideWithSysProps()   key:{key},  vars[key]:{ vars[key]}");
                 retValue.Set(key, vars[key]);
             }
 

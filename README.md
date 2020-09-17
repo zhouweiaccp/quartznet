@@ -41,6 +41,7 @@ For API documentation, please refer to [Quartz.NET site](http://quartznet.source
 ## 源码分析
 ![quartznet\src\Quartz\Core\QuartzSchedulerThread.cs]  job调度
 ![quartznet\src\Quartz\Simpl\TaskSchedulingThreadPool.cs] SemaphoreSlim 信号量 task 
+![quartznet\src\Quartz\Util\QueuedTaskScheduler.cs]  216 线程调度方法
 
 
 
@@ -96,8 +97,11 @@ TriggerBuilder - 用于定义/构建触发器实例
 内置了2个例子任务,可以参照他们完成其他复杂的任务。
 [](https://github.com/zhaopeiym/quartzui)  docker 前端不好用
 [](https://github.com/hey-hoho/ScheduleMasterCore) ScheduleMaster是一个开源的分布式任务调度系统，它基于.NET Core 3.1平台构建，支持跨平台多节点部署运行
-[](https://github.com/fluentscheduler/FluentScheduler)
+[](https://github.com/fluentscheduler/FluentScheduler)简单调度，没有cronExpression
 [](https://github.com/kdcllc/CronScheduler.AspNetCore)
+[])(https://github.com/dahall/taskscheduler)  wrapper for the Windows Task Scheduler. It aggregates the multiple versions, provides an editor and allows for localization
+Separate, functionally identical, libraries for .NET 2.0, 3.5, 4.0, 4.52 and .NET Standard 2.0  调用cmd 没有cronExpression
+[](https://github.com/R-Suite/R.Scheduler)
 
 ## debugger
 ![调试1](./doc/img/100911175046.png)
