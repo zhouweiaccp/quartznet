@@ -21,7 +21,7 @@ There are also some bug fixes related to AdoJobStore.
     * Added transient codes from EF into new JobStore (#681)
 	* Parametrized queries produced by ReplaceTablePrefix should be cached (#651)
 	* Use TypeNameHandling.Auto for JsonObjectSerializer (#621)
-	* Fix a race condition that could cause duplicate trigger firings (#690)
+	* Fix a race condition that could cause duplicate  复制；重复 trigger firings (#690)
 	* ISchedulerListener.JobScheduled not called when scheduling multiple jobs (ScheduleJobs) (#678)
 
 

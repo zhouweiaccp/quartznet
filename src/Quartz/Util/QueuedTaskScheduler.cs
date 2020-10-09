@@ -331,7 +331,7 @@ namespace Quartz.Util
             {
                 var queues = queueGroup.Value;
 
-                // Within each group, iterate through the queues in a round-robin
+                // Within each group, iterate through the queues in a round-robin 循环；循环赛
                 // fashion.  Every time we iterate again and successfully find a task,
                 // we'll start in the next location in the group.
                 foreach (int i in queues.CreateSearchOrder())
