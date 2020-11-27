@@ -86,12 +86,13 @@ TriggerBuilder - 用于定义/构建触发器实例
 
 
 ## link
-[YANGKANG01/QuartzNetJob](https://www.cnblogs.com/miskis/p/8484252.html)   https://github.com/YANGKANG01/QuartzNetJob
+- [](https://gitee.com/tm2002/FI.BatchJob)支持Windows，linux，和Docker 部署 比较完整
+- [YANGKANG01/QuartzNetJob](https://www.cnblogs.com/miskis/p/8484252.html)   https://github.com/YANGKANG01/QuartzNetJob
 [ice-ko/QuartzNetJob](https://www.cnblogs.com/miskis/p/8487634.html)  https://github.com/ice-ko/QuartzNetJob
 [](https://github.com/cq-panda/Quartz.NetUI)  vue 
 [](https://github.com/demirermustafa/Quartz.Extensions.Microsoft.DependencyInjection) 使用简单
 [](https://github.com/ypxf369/TaskManagerQuartzNetCore) 基于Quartz.Net 3.0的分布式Asp.Net Core的任务调度管理平台	
-[](https://gitee.com/tm2002/FI.BatchJob)支持Windows，linux，和Docker 部署。
+
 支持Cron 表达式设置任务，支持任务暂停，任务状态实时更新，和任务失败邮件通知功能。 支持传入任务参数，任务执行Notes。 内置的sqlite 数据库保存任务和任务执行的历史记录。
 内置的历史记录定期清除功能，内置邮件发送队列，内部集成的Dapper 可以用来处理任务数据。
 内置了2个例子任务,可以参照他们完成其他复杂的任务。
