@@ -107,6 +107,7 @@ TriggerBuilder - 用于定义/构建触发器实例
 [](https://github.com/cq-panda/Quartz.NetUI)  vue 
 [](https://github.com/demirermustafa/Quartz.Extensions.Microsoft.DependencyInjection) 使用简单
 [](https://github.com/ypxf369/TaskManagerQuartzNetCore) 基于Quartz.Net 3.0的分布式Asp.Net Core的任务调度管理平台	
+- [Calamus.TaskScheduler](https://github.com/246850/Calamus.TaskScheduler)基于Asp.Net Core 5.0采用Quartz.Net编写的开源任务调度Web管理平台
 
 支持Cron 表达式设置任务，支持任务暂停，任务状态实时更新，和任务失败邮件通知功能。 支持传入任务参数，任务执行Notes。 内置的sqlite 数据库保存任务和任务执行的历史记录。
 内置的历史记录定期清除功能，内置邮件发送队列，内部集成的Dapper 可以用来处理任务数据。
